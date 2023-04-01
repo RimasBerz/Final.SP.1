@@ -1,0 +1,64 @@
+﻿<Window x:Class="SystemProgramming1.DllWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SystemProgramming1"
+        mc:Ignorable="d"
+        Title="DllWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical">
+
+            <StackPanel Orientation="Vertical">
+                <Label Content="Список процессов"/>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Показать" x:Name="MessageBoxA2"
+                            Margin="5" Padding="7 2 7 4" Click="MessageBoxA_Click"/>
+                    <Label x:Name="timeElapsed" Margin="20 0 0 0"/>
+                    <Button Content="Double" x:Name="MessageBoxB2"
+                            Margin="5" Padding="7 2 7 4" Click="MessageBoxW_Click"/>
+                    <Label x:Name="DoubleT" Margin="20 0 0 0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="StackP" x:Name="MessageBoxC2"
+                            Margin="5" Padding="7 2 7 4" Click="MessageBoxC_Click"/>
+                    <Label x:Name="DoubleS" Margin="20 0 0 0"/>
+                    <Button Content="StackP" x:Name="MessageBoxD2"
+                            Margin="5" Padding="7 2 7 4" Click="MessageBoxD_Click"/>
+                    <Label x:Name="D2" Margin="20 0 0 0"/>
+                    <Button Content="StackP" x:Name="MessageBoxF2"
+                            Margin="5" Padding="7 2 7 4" Click="MessageBoxF_Click"/>
+                    <Label x:Name="DoubleSD" Margin="20 0 0 0"/>
+                    <Button Content="StackP" x:Name="MessageBoxJ2"
+                            Margin="5" Padding="7 2 7 4" Click="MessageBoxJ_Click"/>
+                    <Label x:Name="DoubleSJ" Margin="20 0 0 0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Beep" x:Name="MessageBoxBeep"
+                            Margin="5" Padding="7 2 7 4" Click="MessageBoxBeep_Click"/>
+                    <Label x:Name="Beep" Margin="20 0 0 0"/>
+                    <Button Content="Beep2" x:Name="MessageBoxBeep2"
+                            Margin="5" Padding="7 2 7 4" Click="MessageBoxBeep2_Click"/>
+                    <Label x:Name="Beep2" Margin="20 0 0 0"/>
+                </StackPanel>
+                <StackPanel  Orientation="Horizontal">
+                    <Button Content="Thread" x:Name="SayHelloThread"
+                            Margin="5" Padding="7 2 7 4" Click="SayHelloThread_Click"/>
+                <Label x:Name="SayhelloLabel" Margin="20 0 0 0"/>
+                </StackPanel>
+                <StackPanel  Orientation="Horizontal">
+                    <Button Content="Start" x:Name="StartTimer"
+                            Margin="5" Padding="7 2 7 4" Click="StartTimer_Click"/>
+                    <Label x:Name="StartT" Margin="20 0 0 0"/>
+                    <Button Content="Stop" x:Name="StopTimer"
+                            Margin="5" Padding="7 2 7 4" Click="StopTimer_Click"/>
+                    <Label x:Name="StopT" Margin="20 0 0 0"/>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

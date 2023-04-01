@@ -1,0 +1,64 @@
+﻿<Window x:Class="SystemProgramming1.SynchroWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SystemProgramming1"
+        mc:Ignorable="d"
+        Title="SynchroWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Salmon" BorderThickness="1" Grid.Column="1">
+            <TextBlock Grid.Column="1" x:Name="ConsoleBlock"/>
+        </Border>
+        <StackPanel Orientation="Vertical">
+            <Label Content="Обьекты синхронизация" FontWeight="DemiBold" FontSize="20"/>
+            <Label Content="1. Lock"  FontSize="16"/>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="Start1" Content="Start" FontSize="16" Margin="10 0" Padding="8 2 8 5" 
+                        Click="ButtonStart1_Click"/>
+                <Button x:Name="Stop1" Content="Stop" FontSize="16" Margin="250 0" Padding="8 2 8 5" 
+                        Click="ButtonStopAll_Click"/>
+            </StackPanel>
+            <Label Content="2. Monitor"  FontSize="16"/>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="Start2" Content="Start" FontSize="16" Margin="10 0" Padding="8 2 8 5" 
+                        Click="ButtonStart2_Click"/>
+                <Button x:Name="Stop2" Content="Stop" FontSize="16" Margin="250 0" Padding="8 2 8 5" 
+                        Click="ButtonStopAll_Click"/>
+            </StackPanel>
+            <Label Content="3. Mutex"  FontSize="16"/>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="Start3" Content="Start" FontSize="16" Margin="10 0" Padding="8 2 8 5" 
+                        Click="ButtonStart3_Click"/>
+                <Button x:Name="Stop3" Content="Stop" FontSize="16" Margin="250 0" Padding="8 2 8 5" 
+                        Click="ButtonStopAll_Click"/>
+            </StackPanel>
+            <Label Content="4. EventWaitHandle"  FontSize="16"/>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="Start4" Content="Start" FontSize="16" Margin="10 0" Padding="8 2 8 5" 
+                        Click="ButtonStart4_Click"/>
+                <Button x:Name="Stop4" Content="Stop" FontSize="16" Margin="250 0" Padding="8 2 8 5" 
+                        Click="ButtonStopAll_Click"/>
+            </StackPanel>
+            <Label Content="5. Semaphore"  FontSize="16"/>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="Start5" Content="Start" FontSize="16" Margin="10 0" Padding="8 2 8 5" 
+                        Click="ButtonStart5_Click"/>
+                <Button x:Name="Stop5" Content="Stop" FontSize="16" Margin="250 0" Padding="8 2 8 5" 
+                        Click="ButtonStopAll_Click"/>
+            </StackPanel>
+       
+        <Label Content="6. SemaphoreSlim"  FontSize="16"/>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="Start6" Content="Start" FontSize="16" Margin="10 0" Padding="8 2 8 5" 
+                        Click="ButtonStart6_Click"/>
+            <Button x:Name="Stop6" Content="Stop" FontSize="16" Margin="250 0" Padding="8 2 8 5" 
+                        Click="ButtonStopAll_Click"/>
+        </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
